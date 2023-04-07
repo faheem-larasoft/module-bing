@@ -1,5 +1,5 @@
 {
-    "name": "myjobquote/module-adwords",
+    "name": "faheem-larasoft/module-bing",
     "description": "",
     "type": "laravel-library",
     "authors": [
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Adwords\\": ""
+            "Modules\\Bing\\": ""
         }
     }
 }
