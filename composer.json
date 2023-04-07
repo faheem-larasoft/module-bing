@@ -1,0 +1,26 @@
+{
+    "name": "myjobquote/module-adwords",
+    "description": "",
+    "type": "laravel-library",
+    "authors": [
+        {
+            "name": "MyJobQuote",
+            "email": "matt@icmenterprises.co.uk"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Adwords\\Providers\\AdwordsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Adwords\\": ""
+        }
+    }
+}
