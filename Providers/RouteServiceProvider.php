@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Adwords\Providers;
+namespace Modules\Bing\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Modules\Adwords\Http\Controllers';
+    protected $namespace = 'Modules\Bing\Http\Controllers';
 
     /**
      * Define the routes for the application.
@@ -25,7 +25,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::group([
             'middleware' => ['web', 'auth', 'admin', 'role:adwords'],
-            'namespace'  => 'Modules\Adwords\Http\Controllers\Admin',
+            'namespace'  => 'Modules\Bing\Http\Controllers\Admin',
         ], function ($router)
         {
             require __DIR__ . '/../Routes/admin.php';

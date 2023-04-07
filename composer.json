@@ -11,7 +11,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Adwords\\Providers\\AdwordsServiceProvider"
+                "Modules\\Bing\\Providers\\BingServiceProvider"
             ],
             "aliases": {
                 

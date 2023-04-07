@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Adwords\Services;
+namespace Modules\Bing\Services;
 
 use Firebase\JWT\JWT;
 use GuzzleHttp\Client;
@@ -10,7 +10,7 @@ class DataService
     public function post($endpoint, $form = [])
     {
         $client = new Client();
-        $response = $client->post(config('service.adwords.url') . '/' . $endpoint, [
+        $response = $client->post(config('service.bing.url') . '/' . $endpoint, [
             'form_params' => $form,
             'headers'     => [
                 'Authorization' => 'Bearer ' . $this->jwt()
@@ -23,7 +23,7 @@ class DataService
     public function get($endpoint, $collect = true)
     {
         $client = new Client();
-        $response = $client->get(config('service.adwords.url') . '/' . $endpoint, [
+        $response = $client->get(config('service.bing.url') . '/' . $endpoint, [
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->jwt()
             ]
@@ -41,11 +41,11 @@ class DataService
 
     public function jwt()
     {
-        $privateKey = config('service.adwords.public');
+        $privateKey = config('service.bing.public');
 
         $token = [
             "iss" => "myjobquote.co.uk",
-            "aud" => "adwords.serices.myjobquote.co.uk",
+            "aud" => "bing.serices.myjobquote.co.uk",
             "iat" => time(),
             "nbf" => time(),
             "exp" => time() + 120
