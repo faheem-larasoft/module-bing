@@ -48,7 +48,7 @@ class IndexController extends BaseAdminController
     {
         $client = new DataService();
 
-        $index_data = $client->post('index-data', [
+        $index_data = $client->post('campaign-data', [
             'start' => $this->dates['start']->format('Y-m-d H:i:s'),
             'end'   => $this->dates['end']->format('Y-m-d H:i:s')
         ]);
@@ -65,7 +65,7 @@ class IndexController extends BaseAdminController
     {
         $client = new DataService();
 
-        $index_data = $client->post('index-data', [
+        $index_data = $client->post('adgroup-data', [
             'start' => $this->dates['start']->format('Y-m-d H:i:s'),
             'end'   => $this->dates['end']->format('Y-m-d H:i:s')
         ]);
