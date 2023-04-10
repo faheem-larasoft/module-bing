@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace Modules\Bing\Http\Controllers\Admin;
 
 use App\Http\Controllers\Admin\BaseAdminController;
 use Carbon\Carbon;
