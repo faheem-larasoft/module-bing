@@ -6,7 +6,7 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Bing\\Providers\\AdwordsServiceProvider"
+        "Modules\\Bing\\Providers\\BingServiceProvider"
     ],
     "aliases": {},
     "requires": []
